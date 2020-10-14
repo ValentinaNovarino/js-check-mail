@@ -6,8 +6,14 @@ var email = ['homer@simpson.com', 'bart@simpson.com', 'marge@simpson.com', 'lisa
 // console.log(email)
 
 // chiedere all'utente il suo indirizzo email
-var emailUtente = prompt('Inserisci la tua emmail')
-
+var emailUtente = prompt('Inserisci la tua email')
 // console.log(emailUtente);
 
 // verificare se è nella lista (tramite un ciclo for) e comunicare un messaggio adeguato a seconda del risultato
+for (var i = 0; i < 6; i++) {
+    if (email[i] == emailUtente) {
+        console.log('Congratulazioni sei nella lista!')
+    } else {
+        console.log('Spiacenti, non sei nella lista.');
+    }
+}
